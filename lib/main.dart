@@ -31,9 +31,10 @@ class MyMainPage extends StatelessWidget {
         title: const Text("Work"),
       ),
       body: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            margin: EdgeInsets.all(100),
+            margin: EdgeInsets.all(10),
             padding: EdgeInsets.all(10),
             width: 100,
             height: 100,
@@ -48,7 +49,7 @@ class MyMainPage extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.all(100),
+            margin: EdgeInsets.all(10),
             padding: EdgeInsets.all(10),
             width: 100,
             height: 100,
@@ -63,7 +64,7 @@ class MyMainPage extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.all(100),
+            margin: EdgeInsets.all(10),
             padding: EdgeInsets.all(10),
             color: Colors.grey,
             width: 100,
