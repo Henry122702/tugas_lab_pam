@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tugas_lab_pam/about.dart';
+import 'package:tugas_lab_pam/list.dart';
 
 void main() {
   runApp(const MainPage());
@@ -10,6 +11,7 @@ void main() {
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
+/* Membuat Layar */
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,6 +19,7 @@ class MainPage extends StatelessWidget {
   }
 }
 
+/* Class MainPage */
 class MyMainPage extends StatelessWidget {
   const MyMainPage({super.key});
 
@@ -47,10 +50,17 @@ class MyMainPage extends StatelessWidget {
           Container(
             margin: EdgeInsets.all(100),
             padding: EdgeInsets.all(10),
-            color: Colors.grey,
             width: 100,
             height: 100,
-            child: Text('Input/Output'),
+            child: ElevatedButton(
+              child: Text("Input/Output"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Profile()),
+                );
+              },
+            ),
           ),
           Container(
             margin: EdgeInsets.all(100),
