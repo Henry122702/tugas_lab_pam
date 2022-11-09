@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:tugas_lab_pam/RecycleView.dart';
 import 'package:tugas_lab_pam/about.dart';
 import 'package:tugas_lab_pam/list.dart';
 
@@ -11,7 +12,6 @@ void main() {
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
-/* Membuat Layar */
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +19,6 @@ class MainPage extends StatelessWidget {
   }
 }
 
-/* Class MainPage */
 class MyMainPage extends StatelessWidget {
   const MyMainPage({super.key});
 
@@ -54,22 +53,31 @@ class MyMainPage extends StatelessWidget {
             width: 100,
             height: 100,
             child: ElevatedButton(
-              child: Text("Input/Output"),
-              onPressed: () {
+              child:Text("Input/OutPut"),
+              onPressed: (){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Profile()),
-                );
+                  );
               },
-            ),
+               ),
+            //child: Text('Input/Output'),
           ),
           Container(
             margin: EdgeInsets.all(10),
             padding: EdgeInsets.all(10),
-            color: Colors.grey,
             width: 100,
             height: 100,
-            child: Text("Model"),
+            child: ElevatedButton(
+              child:Text("ListView"),
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DaftarList()),
+                  );
+              },
+               ),
+            //child: Text("Model"),
           ),
         ],
       ),
