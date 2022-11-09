@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
@@ -91,8 +89,7 @@ class _ProfileState extends State<Profile> {
             style: TextStyle(color: Colors.black),
           ),
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: ListView(
           children: [
             SizedBox(
               height: 25,

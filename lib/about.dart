@@ -20,7 +20,7 @@ class AboutUs extends StatelessWidget {
               width: 500,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('images/part_time_logo.png'),
+                  image: AssetImage('assets/images/part_time_logo.PNG'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -55,7 +55,7 @@ class AboutUs extends StatelessWidget {
               )),
           Container(
             padding: EdgeInsets.all(10),
-            child: Row(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
@@ -71,6 +71,9 @@ class AboutUs extends StatelessWidget {
                         )),
                     const Text("Dapat post pekerjaan dengan mudah")
                   ],
+                ),
+                SizedBox(
+                  height: 20,
                 ),
                 Column(
                   children: [

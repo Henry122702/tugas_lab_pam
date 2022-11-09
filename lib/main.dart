@@ -53,14 +53,14 @@ class MyMainPage extends StatelessWidget {
             width: 100,
             height: 100,
             child: ElevatedButton(
-              child:Text("Input/OutPut"),
-              onPressed: (){
+              child: Text("Input/Output"),
+              onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Profile()),
-                  );
+                );
               },
-               ),
+            ),
             //child: Text('Input/Output'),
           ),
           Container(
@@ -69,14 +69,14 @@ class MyMainPage extends StatelessWidget {
             width: 100,
             height: 100,
             child: ElevatedButton(
-              child:Text("ListView"),
-              onPressed: (){
+              child: Text("ListView"),
+              onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const DaftarList()),
-                  );
+                );
               },
-               ),
+            ),
             //child: Text("Model"),
           ),
         ],
